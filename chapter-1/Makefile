@@ -1,3 +1,3 @@
 compile:
-	gcc -o play play.c
-	./play
+	gcc -o main main.c
+	./main
