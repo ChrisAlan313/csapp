@@ -1,5 +1,8 @@
 #include "../Unity/src/unity.h"
-#include "numberConversion.c"
+#include "numberConversion.h"
+
+void setUp() {};
+void tearDown() {};
 
 void test_twoToPowerOfNToDecimal(void) {
 	TEST_ASSERT_EQUAL_INT(twoToPowerOfNToDecimal(5), 32);

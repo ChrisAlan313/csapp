@@ -1,7 +1,9 @@
-test:
-	gcc -o numberConversion_test numberConversion_test.c
-	./numberConversion_test.c
+CC=gcc
+CFLAGS=-I. -I../Unity/src
+OBJ = numberConversion.o numberConversion_test.o ../Unity/src/unity.o
 
-compile:
-	gcc -o main main.c
-	./main
+test: $(OBJ)
+	$(CC) -o numberConversion_test $(OBJ)
+	./numberConversion_test
+	rm 
+	*.o

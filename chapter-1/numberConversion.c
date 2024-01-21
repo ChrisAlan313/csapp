@@ -1,5 +1,5 @@
-#include <stdio.h>
+#include "numberConversion.h"
 
-int twoToPowerofNToDecimal(int n) {
+int twoToPowerOfNToDecimal(int n) {
 	return 2 << n;
 }
